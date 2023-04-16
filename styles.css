@@ -1,0 +1,103 @@
+body {
+    background: linear-gradient(to left, #393646, #6D5D6E);
+}
+
+h1,
+h2{
+    text-align: center;
+    color: beige;
+}
+p{
+    color: beige;
+}
+
+legend {
+    text-align: center;
+    color: beige;
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    gap: 1em;
+}
+
+.traducir {
+    height: 500px;
+    width: 60%;
+    border-radius: 20px;
+    border: none;
+    border-color: beige;
+}
+
+.traducido {
+    height: 500px;
+    width: 35%;
+    border-radius: 20px;
+    border: none;
+}
+
+#input-text,
+#mostrar-texto {
+    height: 80%;
+    width: 100%;
+    resize: none;
+    border-radius: 20px;
+    background-color: rgba(244, 238, 224, 90%);
+    font-size: 35px;
+    color: dimgrey;
+}
+#mostrar-texto{
+    background-image:url(img/incognito-g60a9cbbe0_1280.png);
+    background-position: center;
+    background-size:cover;
+}
+.botones,
+.btncopiar {
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    margin-top: 15px;
+    border: none;
+}
+
+.encriptar,
+.desencriptar {
+    width: 45%;
+    border-radius: 20px;
+    border: none;
+    transition-duration: 0.4s;
+    background-color: #C3ACD0;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.copiar {
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    transition-duration: 0.4s;
+    background-color: #C3ACD0;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.encriptar:hover,
+.desencriptar:hover,
+.copiar:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    background-color: #F4EEE0;
+    color: #4F4557;
+    transform: scale(0.95);
+    font-size: 20px;
+}
+
+::placeholder {
+    font-size: 35px;
+}
+
+.copiar:active,
+.encriptar:active,
+.desencriptar:active {
+    border-radius: 50%;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <h1>Encriptador de texto</h1>
+</header>
+
+<body>
+    <div class="container">
+        <fieldset class="traducir">
+            <legend>Texto para Encriptar</legend>
+            <textarea name="input-text" id="input-text" placeholder="Introduzca el texto.(Se aceptan mayúsculas pero sólo se devuelven minúsculas)."></textarea>
+            <fieldset class="botones">
+                <input type="submit" class="encriptar" value="Encriptar" onclick="leertexto()">
+                <input type="submit" class="desencriptar" value="Desencriptar" onclick="desencriptartexto()">
+            </fieldset>
+        </fieldset>
+        <fieldset class="traducido">
+            <legend>Texto encriptado</legend>
+            
+            <textarea name="mostrar-texto" id="mostrar-texto"></textarea>
+            <fieldset class="btncopiar">
+                <input type="submit" class="copiar" value="Copiar" onclick="copiar()">
+            </fieldset>
+        </fieldset>
+        
+    </div>
+    <script src="script.js">
+    </script>
+    <footer>
+        <h1>Créditos</h1>
+        <h2>Sebastian Pelcastre Cruz.</h2>
+        <p>Notas: <br> - Intenté hacer responsiva la página lo mejor que pude. <br> - Como un plus añadí que el encriptador si recibe mayúsculas y las convierte en minúsculas para encriptarlo. <br> </p>
+    </footer>
+
+</body>
+
+</html>
+
